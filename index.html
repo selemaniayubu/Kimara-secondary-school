@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Poppins', arial;
+            margin: 0;
+            padding: 0;
+            height: 1000px;
+            box-sizing: border-box;
+            background: url(pictures/sample-image.png) no-repeat;
+            background-size: cover;
+        }
+        .submission-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #000080;
+            width: 100%;
+            height: 70px;
+            margin-bottom: 20px;
+            font-size: 4em;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        form {
+            margin-top: 0px;
+        }
+        label {
+            color: white;
+            font-size: 1.3em;
+            font-weight: 600;
+            line-height: 4;
+        }
+        input {
+            width: 550px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid rgb(50, 50, 182);
+        }
+        input:hover {
+            border: 2px solid green;
+            background-color: rgb(240, 240, 240);
+            cursor: pointer;
+        }
+        input::placeholder {
+            color: gray;
+            padding-left: 10px;
+            font-size: 1.2em;
+        }
+        .login-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            color: white;
+            width: 300px;
+            height: 30px;
+            margin-left: 130px;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+        }
+        .login-button:hover {
+            background-color: white;
+            color: green;
+            border: 1px solid blue;
+            cursor: pointer;
+        }
+        .login-button:active {
+            background-color: green;
+            color: white;
+            border: 1px solid green;
+            cursor: pointer;
+        }
+        .login-button a {
+            text-decoration: none;
+        }
+        .form-section {
+            border: 2px solid white;
+            border-radius: 5px;
+            margin: 90px 200px 0px 200px;
+            width: 70%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#0000b6, #aeae01, white);
+            position: fixed;
+        }
+
+
+        .footer-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            height: 60px;
+            margin-bottom: -8px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .footer-section a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+        /* Resposie desig for a MOBILE PHONES */
+        @media only screen and (max-width: 768px) {
+            .header-section, .main-section, .footer-section {
+                width: 98%;
+            }
+            ul li {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        /*Resposie desig for a TABLETS*/
+        @media only screen and (min-width: 769px) and (max-width: 1023px) {
+            .header-section, .main-section, .footer-section {
+                width: 98%;
+            }
+            ul li {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="form-section">
+    <header class="submission-header">
+        KIMARA SEC. LOGIN FORM 
+    </header>
+        <form>
+            <label>FullName: </label> <br>
+            <input type="text" placeholder="full name" required> <br><br>
+    
+            <label>Email: </label> <br>
+            <input type="email" placeholder="email" required> <br><br>
+    
+            <label>Password: </label>  <br>
+            <input type="password" placeholder="password" required> <br> <br>
+            
+            <button class="login-button">
+                <a href="homepage.html">LOGIN</a> 
+            </button>
+        </form>
+</section>
+<!--Footer section-->
+<div class="footer-section">
+    <a href="index.html">KimaraSecondarySchool-copyright&copy;2024</a>
+</div>
+<!--End of footer section-->
+</body>
+</html>
